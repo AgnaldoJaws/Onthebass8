@@ -4,7 +4,7 @@
 
 .content-main{
 	width: 100%;
-	height:587px;
+	height:340px;
 	border: solid white 1px;
 	padding: 10px;
 	box-shadow: 1px 1px 1px 1px #888888;
@@ -15,7 +15,12 @@
 
 
 
-
+.imagem {
+	width: 330px;
+	height: 270px;
+	border: solid black 1px;
+	
+}
 
 .title h3{
 	

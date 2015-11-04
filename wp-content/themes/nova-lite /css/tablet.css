@@ -90,14 +90,16 @@
 
 
 .artigo {
-	margin-top: -210px;
-	margin-left: 20px;
+	margin-top: -280px;
+	margin-left: 53%;
 		width: 95%;
+		width: 47%;
 	
 	}
 	
 	.artigo p {
 	color: #444444;
+	color: red;
 	}
 .texto {	
 	
