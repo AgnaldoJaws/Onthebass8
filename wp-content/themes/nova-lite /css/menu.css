@@ -1,0 +1,39 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(JosefinSans-Bold.ttf);
+}
+
+p {
+	
+	color: red;
+	font-family: myFirstFont;
+}
+
+
+
+	#menu {
+	opacity:0.8;
+	}
+	
+	#menu h2 a{
+	color: red;
+	font-family:myFirstFont;
+	font-size: 25px; 
+	
+	}
+	
+	
+	
+	#menu ul li {
+	margin-top: 15px;
+	
+	
+	}
+	
+	
+	#menu ul li a {
+	color: white;
+	font-family: myFirstFont;
+	font-size: 19px;
+	
+	}
