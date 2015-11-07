@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-   
+   <meta name="google-site-verification" content="M5xBk1WsVzhQRDQZXmH-5GhqyYTtPuChN4jfJpkegO8" />
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
