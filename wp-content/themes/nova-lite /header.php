@@ -53,7 +53,8 @@
 			<ul>
 				<li><a href="<?php echo get_option('home');?>">HOME</a></li>
 			       <li><?php wp_list_categories('title_li=');?>    </li>  
-				
+				 <li><?php wp_list_pages('title_li=');?>    </li> 
+			       
 					
 			
 			</ul>
