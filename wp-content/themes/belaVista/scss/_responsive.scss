@@ -1,0 +1,39 @@
+/*MOBILE*/
+
+@media screen and (min-width: 1px) and (max-width: 700px) {
+	
+	body {
+	p {
+	color:pink;
+	}
+
+	}
+	
+}/*FIM MOBILE*/
+
+
+
+/*TABLE*/
+@media screen and (min-width: 701px) and (max-width: 1024px) { 
+	
+	body {
+	p {
+	color:blue;
+	}
+
+	}
+}/*FIM TABLE*/
+
+
+/*DESKTOP*/
+@media screen and (min-width: 1025px) and (max-width:1500px) {
+
+body {
+	p {
+	color:red;
+	}
+
+}
+	
+	
+}/*FIM DESKTOP*/

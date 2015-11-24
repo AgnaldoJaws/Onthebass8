@@ -28,23 +28,18 @@
 		<div id="flip">
 				<div class= "top">
 					<h3 id="a">Menu</h3>
-					<h2><a href="<?php echo get_option('home');?>">ON THA BASS</a></h2>
+					<h2><a href="<?php echo get_option('home');?>">DIARIO CAICARA</a></h2>
 				</div>
 			
 			<div id="menu">
 			<h3 id="logo">Diário Popular Caiçara</h3>
-				<ul id="ulMenu">
-				
+				<ul id="ulMenu">				
 				<li><a href="<?php echo get_option('home');?>">HOME</a></li>
 				 <li><?php wp_list_categories('title_li=');?>    </li>  
 				<li><a href="<?php echo get_option('home');?>">NOTÍCIAS</a></li>
 				<li><a href="<?php echo get_option('home');?>">CONTRIBUA</a></li>
 				<li><a href="<?php echo get_option('home');?>">CONTATO</a></li>  
-								
-				
-					
-
-				</ul>
+						</ul>
 			</div>
 		</div>
 
@@ -52,7 +47,6 @@
 			<ul>
 				<li><a href="<?php echo get_option('home');?>">HOME</a></li>
 			       <li><?php wp_list_categories('title_li=');?>    </li>  
-				
 					
 			
 			</ul>
@@ -62,7 +56,7 @@
 
 	<!-- Final Menu -->
 
-	
+	<div class="imgCel"></div>
 
 
 	<script> 

@@ -46,28 +46,19 @@
 }
 
 .content-main{
-	background-color: white;
-	height: 360px;
-	width:775px;
+	background-color: white;	
 	margin-left:3%;
-	
-	
+	width: 700px;
 }
-.container {
-	
-	margin-top: 160px;
-	
-	
-	
+.container {	
+	margin-top: 160px;	
 }
 #a{
 	
 	margin-top: -600px;
 }
 
-#panel ul  {
-	
-	
+#panel ul  {	
 	margin-top: -500px;
 	float: left;
 }
@@ -78,18 +69,17 @@
 }
 
 
-.artigo {
+.abc {
 	margin-top: -220px;
-	margin-left: 45%;
-	
-	width: 50%;
-	
+	margin-left: 45%;	
+	width: 50%;	
 	}
 	
-	.artigo p {
+	
+	.abc p {
 	color: #444444;
 	text-align: justify;
-	margin-top: 10px;
+	
 	}
 
 
@@ -109,4 +99,13 @@
 	
 }
 
+}
+
+@media screen and (min-width: 1022px) and (max-width:1500px) {
+.abc {
+	margin-top: -220px;
+	margin-left: 48%;	
+	width: 50%;	
+	
+	}
 }

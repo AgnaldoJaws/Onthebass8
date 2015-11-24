@@ -184,19 +184,24 @@ a:focus {
 	text-align: center;
 	position: relative;
 	display: inline-block;
-	margin-left: -35%;
+	margin-left: 10%;
 	margin-top: 30px;
-	width: 300px;	
+	width: 150px;	
 	
 }
 
+@media screen and (min-width: 1025px) and (max-width:1500px) {
+
+	.button {	
+	margin-left: -25%;	
+}
+
+	
+	}
 
 @media screen and (min-width: 1px) and (max-width: 700px) { 
 	.button {
-	margin-left: 30%;
-	
-	
-	
+	margin-left: 20%;
 	
 }
 	

@@ -1,0 +1,53 @@
+
+
+@import url('css/style.css');
+
+#sorte{
+	background-color:red;
+	margin-top:-5350px;
+}
+
+.sidebar {
+	margin-top: -38px;
+	
+}
+
+.widgets {
+	
+	opacity:0.9;
+}
+.sidebar .widgets {
+	width: 300px;
+	
+	border: 1px solid white;
+	padding: 18px;
+	font-family: Helvetica;
+	font-size: 20px;
+	color: #333333;
+	margin-top: 40px;
+	margin-left: 13%;
+	
+}
+
+.widgets h3{
+	
+	margin-left: 13%;
+	margin-top: -5px;
+}
+.sidebar .widgets a:hover {
+	font-family: Helvetica;
+	color: white;
+	list-style: none;
+	text-decoration:none; 
+}
+
+.sidebar .widgets ul {
+	
+	list-style-type: none;
+}
+
+.widgets a {
+	
+	color: black;
+	
+}

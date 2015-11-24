@@ -21,8 +21,13 @@
 					</div>				
 
 					<div class="artigo">
-						 <?php the_excerpt()?>						
+						 					
 					</div>
+					
+					<div class="abc">
+						 <?php the_excerpt()?>					
+					</div>
+				
 
 				</div>
                     <?php endwhile; else:  ?>
