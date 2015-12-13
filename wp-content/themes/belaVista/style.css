@@ -2,41 +2,179 @@
 
 @import url('css/style.css');
 
-#sorte{
-	background-color:red;
-	margin-top:-5350px;
-}
 
-.sidebar {
-	margin-top: -38px;
+
+img, 
+.wp-caption {
+	max-width: 100%;
+	height: 300px;
 	
 }
 
-.widgets {
+.container-fluid {
 	
-	opacity:0.9;
+	text-align: justify;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(font/Montserrat-UltraLight.otf);
+}
+
+
+#novidadeRow {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+}
+
+#slider1 {
+	margin-left: 1%;
+}
+
+
+.imagem{
+	margin-left: 5%;
+}
+
+.texto {
+	width:79%;
+	text-align: justify;
+	margin-left: 5%;
+}
+
+.pub {
+	margin-left: 20%;
+}
+section {
+	width: 100%;
+	height: 665px;	
+	background-color:white;
+	
+	
+}
+
+.btn{
+	
+	margin-left: 40%;
+}
+#sorte{	
+	
+   
+	margin-top: -5150px;
+	
+	
+}
+
+#cara {
+	
+	
+	height: 2300px;
+}
+.text{
+	text-align: justify;	
+	
+	
+}
+
+
+.title h3{
+	
+	margin-left: 14%;
+	margin-top: -10px; 	 	
+}
+
+.pub {
+	
+	margin-left:15%;
+}
+
+.btn {
+	margin-left:30%;
+}
+
+.link:HOVER{
+	background-color: #0d980d;
 }
 .sidebar .widgets {
-	width: 300px;
-	
+	box-shadow: 2px 2px 2px #888888;
+	 
+	background-color:white;
 	border: 1px solid white;
 	padding: 18px;
 	font-family: Helvetica;
 	font-size: 20px;
 	color: #333333;
-	margin-top: 40px;
-	margin-left: 13%;
+	margin-top: 20px;	
+	opacity:0.9;
+	width: 300px;
+	
 	
 }
 
-.widgets h3{
+	@media screen and (min-width: 701px) and (max-width: 1024px) {
 	
-	margin-left: 13%;
+	.texto {
+	width: 95%;
+	margin-left: 5%;
+	}
+	
+	
+	.btn {
+	margin-left:40%;
+	}
+	
+	.pub {
+	margin-left:30%;
+	}
+	 }
+	
+	
+
+@media screen and (min-width: 1px) and (max-width: 755px) { 
+	
+	
+	.sidebar .widgets {
+	margin-left: -17px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	width: 114%;
+}
+
+.title {
+	margin-left: -10%;
+	
+}
+.texto{
+	text-align: justify;	
+	width: 95%;
+	margin-left: 5%;
+}
+	
+	#sorte {
+	
+	margin-top:-4681px;
+	margin-left: -50px;
+	}
+}
+
+
+
+
+				
+.widgets h4{
+	 font-family: myFirstFont;
+	margin-left: 35%;
 	margin-top: -5px;
+	color: #065206;
+}
+
+.sidebar .widgets a {
+	 font-family: myFirstFont;
+	font-size: 18px;
 }
 .sidebar .widgets a:hover {
 	font-family: Helvetica;
-	color: white;
+	color: #065206;
 	list-style: none;
 	text-decoration:none; 
 }
@@ -51,3 +189,20 @@
 	color: black;
 	
 }
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+

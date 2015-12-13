@@ -31,25 +31,52 @@
 <?php wp_head(); ?>
 
 <style>
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 70%;     
-      height: 300px;
-     
-      
-  }
-  </style>
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	width: 100%;
+	margin: auto;
+	
+}
+
+@media screen and (min-width: 700px) and (max-width:1500px) { 
+	
+	.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	
+	height: 430px;
+}
+	
+}
+
+</style>
 </head>
 
 
 <body id="myPage" data-spy="scroll" data-target=".navbar"
 	data-offset="60">
+
+
+
 	<header id="header" class="container">
 		<div class="content">
-			<div class="logo-container">
-				<div class="logo-container__logo">
-					<a href="<?php echo get_option('home');?>"> <img
-						src="http://onthebass.com.br/logo.png" class="img-responsive"></a>
+			<div class="logo1">
+
+
+
+				<a href="<?php echo get_option('home');?>"> <img
+					src="http://www.onthebass.com.br/logo-sitio-bela-vitsa.png"
+					class="img-responsive"></a>
+
+
+			</div>
+
+			<div class="logo2">
+
+				<div class="panel-body">
+
+					<div class="search-form-container">
+					<?php get_search_form(); ?>
+				   </div>
+
+
 					<a href="https://www.facebook.com/belavistaagroecologico/?fref=ts"><img
 						src="http://onthebass.com.br/icoFace.png" id="icoFace"
 						class="img-responsive"></a> <a href="#"><img
@@ -59,14 +86,8 @@
 						class="img-responsive"></a>
 				</div>
 			</div>
-
-			<div class="search-container">
-				<form action="">
-					<input class="form-control search-container__input" type="text"
-						placeholder="Pesquisar no site">
-				</form>
-			</div>
 		</div>
+
 	</header>
 
 
@@ -96,13 +117,13 @@
 								<li class="active"><a href="<?php echo get_option('home');?>">Home
 								</a></li>
 								<li><a href="#sobre" data-scroll>Sobre</a></li>
-								<li><a href="#servicos">Servicos</a></li>
-								<li><a href="#produtos">Produtos</a></li>
-
-								<li><a href="#localizacao">Localizacao</a></li>
+								<li><a href="#servicos" data-scroll>Servicos</a></li>
+								<li><a href="#novidade" data-scroll>Novidades</a></li>
+								
+								<li><a href="#localizacao" data-scroll>localizacao</a></li>
 								<li><a href="#contato">Contato</a></li>
-								<li><?php wp_list_categories('title_li=');?> </li>
-								<li><?php wp_list_categories('title_li=');?> </li>
+
+
 
 							</ul>
 
@@ -120,9 +141,9 @@
 
 
 
-	<div class="row">
-		<div id="subRow"class="col-md-8">
-
+	<div id="slider1" class="container">
+		<div id="subRow" class="col-md-10">
+			<br>
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
@@ -134,37 +155,62 @@
 
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
+
+
 					<div class="item active">
-						<img src="http://onthebass.com.br/img2.jpg" alt="Chania">
+						<img
+							src="http://www.onthebass.com.br/st-belavista/apicultura-criacao-de-abelhas.jpg"
+							class="img-responsive" alt="Chania">
 						<div class="carousel-caption">
-							<h3>Chania</h3>
-							<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+							<h2>Criação de Abelhas</h2>
+							<h4>The atmosphere in Chania has a touch of Florence and Venice.</h4>
 						</div>
 					</div>
 
 					<div class="item">
-						<img src="http://onthebass.com.br/img4.jpg" alt="Chania">
+						<img
+							src="http://www.onthebass.com.br/st-belavista/meliponicultura-criacao-de-abelhas-sel-ferrao%20.JPG"
+							alt="Chania">
 						<div class="carousel-caption">
-							<h3>Chania</h3>
-							<p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+							<h2>Cachoeira do Pitú</h2>
+							<h4>The atmosphere in Chania has a touch of Florence and Venice.</h4>
 						</div>
 					</div>
 
 					<div class="item">
-						<img src="http://onthebass.com.br/img2.jpg" alt="Flower">
+						<img
+							src="http://www.onthebass.com.br/st-belavista/produtos-processados.jpg"
+							alt="Flower">
 						<div class="carousel-caption">
-							<h3>Flowers</h3>
-							<p>Beatiful flowers in Kolymbari, Crete.</p>
+							<h2>Meliponicultura</h2>
+							<h4>Beatiful flowers in Kolymbari, Crete.</h4>
 						</div>
 					</div>
 
 					<div class="item">
-						<img src="http://onthebass.com.br/img3.jpg" alt="Flower">
+						<img
+							src="http://www.onthebass.com.br/st-belavista/refeicoes-com-alimento-sem-agrotoxico.jpg"
+							alt="Flower">
 						<div class="carousel-caption">
-							<h3>Flowers</h3>
-							<p>Beatiful flowers in Kolymbari, Crete.</p>
+							<h2>Produtos processados</h2>
+							<h4>Beatiful flowers in Kolymbari, Crete.</h4>
 						</div>
 					</div>
+
+					<div class="item">
+						<img
+							src="http://www.onthebass.com.br/st-belavista/turismo-rural.jpg"
+							alt="Flower">
+						<div class="carousel-caption">
+							<h2>Turismo Rural</h2>
+							<h4>Beatiful flowers in Kolymbari, Crete.</h4>
+						</div>
+					</div>
+
+
+
+
+
 				</div>
 
 				<!-- Left and right controls -->
@@ -177,20 +223,17 @@
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
-
-
-
 		</div>
 
 
 
 
-		<div class="col-md-4">					
+		<div class="col-md-2">			
 						
 							 
                                
                                 <?php get_sidebar(); ?>
-                              
+                                
                                 
 							
 						</div>
@@ -199,116 +242,199 @@
 
 	</div>
 
-
-
-	<section id="header">
-		<h3>header</h3>
-		<a href="#myPage" title="To Top"> <span
-			class="glyphicon glyphicon-chevron-up"></span>
-	
-	</section>
-
 	<section id="sobre">
-		<h3>SOBRE</h3>
-		<a href="" title="To Top"> <span
-			class="glyphicon glyphicon-chevron-up"></span>
-		</a>
-	</section>
 
-	<section id="servicos">
-		<h3>SERVICOS</h3>
-		<a href="#myPage" title="To Top"> <span
-			class="glyphicon glyphicon-chevron-up"></span>
-		</a>
 		<div class="row">
+			<div class="col-md-5">
+				<div class="container-fluid">
+					<h3>Sobre o sítio Bela Vista</h3>
 
-			<div class="col-md-8" id="row_sidebar">
-				<div class="panel panel-default">
-					<div class="panel-body">
-	 <?php 	if (have_posts ()) : while ( have_posts () ) : 	the_post ();?>				
-				<div class="panel panel-default">
-							<div class="panel-body">
+					<p>Pensando mais a longo prazo, a complexidade dos estudos efetuados nos obriga à análise das condições financeiras e administrativas exigidas. Nunca é demais lembrar o peso e o significado destes problemas, uma vez que o início da atividade geral de formação de atitudes assume importantes posições no estabelecimento do fluxo de informações.
+significado destes problemas, uma vez que o início da atividade geral de formação de atitudes assume importantes posições no estabelecimento do fluxo de informações.
+significado destes problemas, uma vez que o início da atividade geral de formação de atitudes assume importantes posições no estabelecimento do fluxo de informações.
+					
+						
+						</p>
 
-								<div class="title">
-									<a href="<?php the_permalink(); ?>"><h1><?php the_title();?></h1></a>
-								</div>
-
-								<div class="imagem">
-									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(array(250,250))?></a>
-								</div>
-
-
-								<div class="texto">
-									<a href="<?php the_permalink(); ?>">	<?php the_excerpt();?>	</a>
-								</div>
-
-								<div class="pub">
-									<h4>
-						Publicado por <?php the_author()?>
-						 em <?php the_date("d/m/Y")?>
-				- <?php comments_number("Nenhum Comentário","1 Comentário","% comentários")?>
-				
-				</h4>
-								</div>
-
-
-								<a href="<?php the_permalink(); ?>">
-									<button type="button" class="btn btn-default">Continua Lendo</button>
-								</a>
-							</div>
-						</div>
-				
-				<?php endwhile;  else :?>
-				<p>Nenhum post</p>				
-				<?php endif;?>
-				
-	         </div>
 				</div>
+
+
+			</div>
+
+			<div class="col-md-7">
+			 <img src="http://www.onthebass.com.br/st-belavista/meliponicultura-criacao-de-abelhas-sel-ferrao%20.JPG" class="img-responsive img-circle" alt="Cinque Terre"> 
 			</div>
 
 
 		</div>
-	</section>
-
-	<section id="produtos">
-		<h3>PRODUTOS</h3>
-		<a href="#myPage" title="To Top"> <span
-			class="glyphicon glyphicon-chevron-up"></span>
-		</a>
-	</section>
-
-	<section id="noticias">
-		<h3>NOTICIAS</h3>
-		<a href="#myPage" title="To Top"> <span
-			class="glyphicon glyphicon-chevron-up"></span>
-			<div class="row">
-	
-	</section>
-
-	<section id="galeria">
-		<h3>GALERIA</h3>
-		<a href="#myPage" title="To Top"> <span
-			class="glyphicon glyphicon-chevron-up"></span>
-		</a>
-	</section>
-
-	<section id="localizacao">
-		<h3>LOCALIZACAO</h3>
-
-		<a href="#myPage" title="To Top"> <span
-			class="glyphicon glyphicon-chevron-up"></span>
-		</a>
-	</section>
-
-
-	<section id="contato">
-		<h3>CONTATO</h3>
-
 		<a href="<?php echo get_option('home');?>" title="To Top"> <span
 			class="glyphicon glyphicon-chevron-up"></span>
 		</a>
 	</section>
 
+
+	
+
+
+
+	<section id="novidade">
+
+		<div id="novidadeRow" class="row">
+
+			<div class="col-md-9" id="row_sidebar">
+				
+	 <?php
+		
+$aRecentPosts = new WP_Query ( "showposts=3" );
+		while ( $aRecentPosts->have_posts () ) :
+			$aRecentPosts->the_post ();
+			?>			
+				<div class="panel panel-default">
+					<div class="panel-body">
+
+						<div class="title">
+							<h3><?php the_title();?></h3>
+						</div>
+
+						<div class="imagem">
+							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(array(750,750))?></a>
+						</div>
+
+
+						<div class="texto">
+								<?php the_excerpt();?>	
+								</div>
+
+						<div class="pub">
+							<h5>
+						Publicado por <?php the_author()?>
+						 em <?php the_date("d/m/Y")?>
+				
+				
+				</h5>
+						</div>
+
+
+						<a href="<?php the_permalink(); ?>"> <a
+							href="<?php the_permalink();?>" class="btn btn-success"
+							role="button">Continuar Lendo</a>
+						</a>
+					</div>
+				</div>
+				
+				
+				<?php endwhile; ?> 
+				
+							
+				
+				
+	         </div>
+		</div>
+
+	</section>
+
+	<div class="apace3">
+
+</div>
+
+	<section id="contato">
+		<div class="container-fluid bg-grey">
+			<h2 class="text-center">CONTACT</h2>
+			<a href="<?php echo get_option('home');?>" title="To Top"> <span
+				class="glyphicon glyphicon-chevron-up"></span>
+			</a>
+			<div class="row">
+				<div class="col-sm-5">
+					<p>Contact us and we'll get back to you within 24 hours.</p>
+					<p>
+						<span class="glyphicon glyphicon-map-marker"></span> Chicago, US
+					</p>
+					<p>
+						<span class="glyphicon glyphicon-phone"></span> +00 1515151515
+					</p>
+					<p>
+						<span class="glyphicon glyphicon-envelope"></span>
+						myemail@something.com
+					</p>
+				</div>
+				<div class="col-sm-7">
+					<div class="row">
+						<div class="col-sm-6 form-group">
+							<input class="form-control" id="name" name="name"
+								placeholder="Name" type="text" required>
+						</div>
+						<div class="col-sm-6 form-group">
+							<input class="form-control" id="email" name="email"
+								placeholder="Email" type="email" required>
+						</div>
+					</div>
+					<textarea class="form-control" id="comments" name="comments"
+						placeholder="Comment" rows="5"></textarea>
+					<br>
+					<div class="row">
+						<div class="col-sm-12 form-group">
+							<button class="btn btn-default pull-right" type="submit">Send</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="localizacao">
+		<iframe
+			src="https://mapsengine.google.com/map/embed?mid=zbUwcYnYwKvU.kzJUOnvw5vMY"
+			width="100%" height="665"></iframe>
+		<a href="<?php echo get_option('home');?>" title="To Top"> <span
+			class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+	</section>
+
+
+<div id="servicos">
+	<div class="container-fluid text-center bg-grey">
+  <h2>Serviços</h2>
+  <h4>What we have created</h4>
+  <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://www.onthebass.com.br/st-belavista/refeicoes-com-alimento-sem-agrotoxico.jpg" alt="Paris">
+        <p><strong>Paris</strong></p>
+        <p>Yes, we built Paris</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://www.onthebass.com.br/st-belavista/apicultura-criacao-de-abelhas.jpg" alt="New York">
+        <p><strong>New York</strong></p>
+        <p>We built New York</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://www.onthebass.com.br/st-belavista/meliponicultura-criacao-de-abelhas-sel-ferrao%20.JPG" alt="San Francisco">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+     <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://www.onthebass.com.br/st-belavista/meliponicultura-criacao-de-abelhas-sel-ferrao%20.JPG" alt="San Francisco">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+     <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://www.onthebass.com.br/st-belavista/meliponicultura-criacao-de-abelhas-sel-ferrao%20.JPG" alt="San Francisco">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+</div>
+		<a href="<?php echo get_option('home');?>" title="To Top"> <span
+			class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+	</div>
 
 <?php wp_footer();?>
 

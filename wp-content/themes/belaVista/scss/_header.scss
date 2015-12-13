@@ -1,35 +1,92 @@
 body {
+background:url(../img/fundo.png);
+
+
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/Montserrat-UltraLight.otf);
+}
+
+
+
+> #header {
+		> .content {
+			@include make-row;
+			
+			> .logo1 {
+			
+			@include make-xs-column-offset(3);
+			
+			
+				
+			
+			}
+			
+			
+			> .logo2 {
+				
+			
+			
+			
+			}
+		
+		
+		}
+	
+	
+	}
+	
+
+section {
+	> #localizacao{
+		margin-left:10px;
+		
+	}
+
+}
+
 
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
     color: red;
 }
- section{
-    
-	width:100%;
-	height:630px;
-	border: solid black 1px;
-}
+ 
 
 
->.row{
-	
+> #slider1{	
 	 margin-top:5px;
-	
+	 
 	
 	> #subRow {
 	
 		> #myCarousel{
-		margin-left:150px;
+		margin-left:20px;
 		
 		> .carousel-inner{
 		
 			> .item{
 			width:1060px;
+			
 			> .carousel-caption{
+			height:120px;
+			border:solid black 1px;
+			background-color:black;
+			width:100%;
+			opacity:0.8;
+			margin-left:-220px;
 			
+			h2 {
+			color:white;
+			margin-top:-5px;
+			margin-left:-15%;
+			}
 			
+			h4 {
+			color:white;
+			margin-left:-15%;
+			}
 			}
 			}
 			
@@ -42,74 +99,21 @@ footer .glyphicon {
 
 
 }
-  background:url(../img/fundo.png);
-	> header {
-	padding:25px 0;
-	> .content{
-	 	@include make-row;
-	 	> .logo-container {
-	 	
-	 		margin-top:-10px;
-	 		@include make-md-column(6);
-	 		@include make-sm-column(4);
-	 		@include make-xs-column(12);
-	 		
-	 		> .logo-container__logo {	 		
-	 		
-	 		margin-left:10%;
-	 		margin-top:-5%;
-	 		
-	 		a > #icoTw{
-	 		
-	 		margin-left:305%;
-	 		margin-top:-50px;
-	 		}
-	 		a > #icoyoutube{
-	 		margin-left:270%;
-	 		margin-top:-45px;
-	 		 
-	 		}
-	 		a > #icoFace{
-	 			margin-left:250%;
-	 			margin-top:-90px;
-	 		}
-	 		}
-	 	}
-	 	> .search-container {
-	 	@include make-md-column(4);
-	 	@include make-sm-column(4);
-	 	@include make-xs-column(12);
-	 	
-	 	
-	 	@include make-md-column-offset(5);
-	 	@include make-sm-column-offset(4);
-	 	@include make-xs-column-offset(0);
-	 	
-	 	
-	 	
-	 	input.search-container__input.form-control{
-	 	width:267px;
-	 	margin-left:10%;
-		height:45px;
-		font:13px $font_main;
-		color:#cccccc;
-		margin-top:7px;
-		border: 1px solid #DDDDDD;
-		
-	         }
-	      }
-	 	}
-	}
+  
+	
+	
+	
 	
 	> #navegacao{
 	
 	background:#065206;
-	margin-top:25px;
+	margin-top:5px;
 		> .container {
 			> #navegacao__content {
 			@include make-md-column(12);
 			.navbar {
 			
+			margin-left:75px;
 				border-radius: 0;
 				background:#065206;
 				box-shadow:none;
@@ -122,14 +126,16 @@ footer .glyphicon {
 							&.active{
 								> a{
 								   background:#0d980d;
+								   
 									
 						}
 						}
 						a{
 							color:#fff;
-							font: bold 16px $font_main;
+							font-size: 20px;
+							font-family:  myFirstFont;
 							&:hover{
-								background:#0d980d;
+							background:#0d980d;
 							}
 						}
 				}

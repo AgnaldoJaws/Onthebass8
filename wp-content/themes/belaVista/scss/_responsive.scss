@@ -1,12 +1,123 @@
 /*MOBILE*/
 
-@media screen and (min-width: 1px) and (max-width: 700px) {
+@media screen and (min-width: 1px) and (max-width: 755px) {
 	
 	body {
-	p {
-	color:pink;
-	}
+	
+	> .apace3 {
 
+height:1500px;
+
+}
+	
+	> .apace2 {
+background-color:white;
+height:1500px;
+
+}
+	
+	> .row {
+		> #singleBorder2 {
+		
+		margin-top:-3880px;
+		margin-left:-70px;
+		}
+	
+	}
+	
+	> #space {	
+	margin-bottom:250px;	
+	height:10px;	
+	}
+	
+	> #slider1 {	
+	
+
+	
+	
+	> #subRow {	
+	margin-left:-40px;
+		> #myCarousel{
+		width:100%;
+		
+		> .carousel-inner{
+		
+			> .item{
+			width:110%;
+			height:200px;
+			
+			
+			> .carousel-caption{
+			margin-left:-20%;
+		
+			
+			
+			h4 {
+			font-size:11px;
+			margin-left:10px;
+			
+			}
+			
+			h2 {
+			font-size:20px;
+			margin-left:5%;
+			}
+			}
+			}
+			
+		
+		}
+	
+	}
+	}
+	
+
+
+}
+  
+	
+	> #navegacao{ 
+	margin-top:-10px;
+	}
+		> #header {
+		> .content {
+			@include make-row;
+			
+			> .logo1 {
+			
+				
+			
+			}
+			
+			
+			> .logo2 {
+				
+			> .panel-body {
+			
+			a > #icoFace {
+			margin-left:10%;
+			}
+			a > #icoyoutube{
+			margin-left:30%;
+			margin-top:-45px;
+			}
+			
+			a > #icoTw{
+			margin-left:70%;
+			margin-top:-45px;
+			}
+			
+			}
+			
+			
+			}
+		
+		
+		}
+	
+	
+	}
+			
 	}
 	
 }/*FIM MOBILE*/
@@ -17,8 +128,105 @@
 @media screen and (min-width: 701px) and (max-width: 1024px) { 
 	
 	body {
-	p {
-	color:blue;
+	
+	> #contato {
+	
+	
+	}
+	> .apace3 {
+background-color:white;
+height:1000px;
+
+}
+
+	> .apace2 {
+background-color:white;
+height:50px;
+}
+
+	> .row {
+		> #singleBorder {
+		
+		margin-top:-3680px;
+		
+		> .panel {
+		 > panel-body {
+		 
+		 }
+		}
+		}
+	
+	}
+	 	
+	
+	> #navegacao {
+		> .container {
+		> #navegacao__content {
+		> .navbar {
+		margin-left:-50px;
+		}
+		
+		}
+		
+		
+		}
+	
+	
+	}
+	
+	> #header {
+		> .content {
+			@include make-row;
+			
+			> .logo1 {
+			
+			@include make-sm-column-offset(0);
+			
+			
+			}
+			
+			
+			> .logo2 {
+			margin-top:-150px;
+				@include make-sm-column(5);
+				@include make-sm-column-offset(6);
+			
+			a > #icoFace {
+			margin-left:10%;
+			}
+			a > #icoyoutube{
+			margin-left:30%;
+			margin-top:-45px;
+			}
+			
+			a > #icoTw{
+			margin-left:70%;
+			margin-top:-45px;
+			}
+			
+			}
+		
+		
+		}
+	
+	
+	}
+	
+	
+	>#slider1{	
+		> #subRow {	
+			> #myCarousel{
+				margin-left:5px;
+				> .carousel-inner{
+					> .item{ 
+					width:930px;
+				}	 
+			
+			}		
+		 }	
+	}
+	 
+	 
 	}
 
 	}
@@ -29,8 +237,119 @@
 @media screen and (min-width: 1025px) and (max-width:1500px) {
 
 body {
-	p {
-	color:red;
+
+
+> .apace3 {
+background-color:white;
+height:900px;
+
+}
+
+> .apace2 {
+background-color:white;
+height:200px;
+
+
+}
+> #navegacao{
+	
+	
+	
+		> .container {
+			> #navegacao__content {
+			margin-left:11%;
+			.navbar {
+			
+			margin-left:75px;
+			
+				
+				
+				.navbar-collapse{
+					
+					>ul.navbar-nav{
+						> li{
+							&.active{
+								> a{
+								   
+								   
+									
+						}
+						}
+						a{
+							
+							&:hover{
+						
+							}
+						}
+				}
+				
+				}
+				}
+			
+			}
+			}
+		
+		}
+	
+	
+	}	
+
+
+section {
+
+	> #novidadeRow {
+		margin-left:1%;
+		
+	}
+}
+
+
+	> .row {
+		> #singleBorder {
+		
+		margin-top:-3720px;
+		}
+	
+	}
+	
+
+
+	> #header {
+		> .content {
+			@include make-row;
+			
+			> .logo1 {
+			
+			@include make-sm-column-offset(0);
+			
+			
+			}
+			
+			
+			> .logo2 {
+			margin-top:-130px;
+				@include make-sm-column(3);
+				@include make-sm-column-offset(9);
+			
+			a > #icoFace {
+			margin-left:10%;
+			}
+			a > #icoyoutube{
+			margin-left:30%;
+			margin-top:-45px;
+			}
+			
+			a > #icoTw{
+			margin-left:70%;
+			margin-top:-45px;
+			}
+			
+			}
+		
+		
+		}
+	
+	
 	}
 
 }
